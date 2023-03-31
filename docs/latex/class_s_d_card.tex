@@ -1,0 +1,156 @@
+\hypertarget{class_s_d_card}{}\doxysection{SDCard Class Reference}
+\label{class_s_d_card}\index{SDCard@{SDCard}}
+
+
+A classe \mbox{\hyperlink{class_s_d_card}{SDCard}} usada para gerenciar um objeto do tipo SD da biblioteca de SD para Arduino.  
+
+
+
+
+{\ttfamily \#include $<$SDCard.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_d_card_aa57f64cf28817d210706222f60be9001}{SDCard}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão de um novo cartão SD. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_s_d_card_a70edc6943d786fb08519ade49244c638}{get\+List}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o vetor com o nome de todos os arquivos no SD. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_card_a0a4115781fba27069d2146ab40ec38c4}{Makelist}} ()
+\begin{DoxyCompactList}\small\item\em Preenche o vector files\+Names com os nomes dos arquivos no cartão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_card_acfdd700fa4de207ddf3ac4238961a5e0}{print\+Position}} (std\+::string p\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Printa a posição atual dos motores. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_s_d_card_a166d983346773a2a57f72e57f727b3ba}{read\+File}} (int p\+Num\+File, char p\+Num\+Stroke)
+\begin{DoxyCompactList}\small\item\em Recebe como parametro a posição de uma musica no cartão e o n da batida que deverá ser retornada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_card_a437d1d0ee5a0f3dbf7d76fdef586fae1}{write\+In\+File}} (vector$<$ int $>$ p\+Engine\+Pos)
+\begin{DoxyCompactList}\small\item\em Escreve a posição dos motores no arquivo de armazenar posição. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_s_d_card_ad090fd679dfcb31d03097b7566b36485}{SD\+\_\+\+SPEED}}
+\begin{DoxyCompactList}\small\item\em BPM contido no arquivo de cada música. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_s_d_card_ab6bec441dac1b45d9355eb13e799cd37}{SD\+\_\+\+SUBDIVISION}}
+\begin{DoxyCompactList}\small\item\em Subdivisão ritmíca de cada música. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{class_s_d_card}{SDCard}} usada para gerenciar um objeto do tipo SD da biblioteca de SD para Arduino. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_d_card_aa57f64cf28817d210706222f60be9001}\label{class_s_d_card_aa57f64cf28817d210706222f60be9001}} 
+\index{SDCard@{SDCard}!SDCard@{SDCard}}
+\index{SDCard@{SDCard}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{SDCard()}{SDCard()}}
+{\footnotesize\ttfamily SDCard\+::\+SDCard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor padrão de um novo cartão SD. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_card_a70edc6943d786fb08519ade49244c638}\label{class_s_d_card_a70edc6943d786fb08519ade49244c638}} 
+\index{SDCard@{SDCard}!getList@{getList}}
+\index{getList@{getList}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{getList()}{getList()}}
+{\footnotesize\ttfamily vector$<$ string $>$ SDCard\+::get\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna o vetor com o nome de todos os arquivos no SD. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$string$>$ vetor de strings com o nome de todos os arquivos armazenados no SD. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_card_a0a4115781fba27069d2146ab40ec38c4}\label{class_s_d_card_a0a4115781fba27069d2146ab40ec38c4}} 
+\index{SDCard@{SDCard}!Makelist@{Makelist}}
+\index{Makelist@{Makelist}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{Makelist()}{Makelist()}}
+{\footnotesize\ttfamily void SDCard\+::\+Makelist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Preenche o vector files\+Names com os nomes dos arquivos no cartão. 
+
+\mbox{\Hypertarget{class_s_d_card_acfdd700fa4de207ddf3ac4238961a5e0}\label{class_s_d_card_acfdd700fa4de207ddf3ac4238961a5e0}} 
+\index{SDCard@{SDCard}!printPosition@{printPosition}}
+\index{printPosition@{printPosition}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{printPosition()}{printPosition()}}
+{\footnotesize\ttfamily void SDCard\+::print\+Position (\begin{DoxyParamCaption}\item[{std\+::string}]{p\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Printa a posição atual dos motores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File\+Name} & string contendo o nome do arquivo onde está armazenado as posições dos motores. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_card_a166d983346773a2a57f72e57f727b3ba}\label{class_s_d_card_a166d983346773a2a57f72e57f727b3ba}} 
+\index{SDCard@{SDCard}!readFile@{readFile}}
+\index{readFile@{readFile}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily string SDCard\+::read\+File (\begin{DoxyParamCaption}\item[{int}]{p\+Num\+File,  }\item[{char}]{p\+Num\+Stroke }\end{DoxyParamCaption})}
+
+
+
+Recebe como parametro a posição de uma musica no cartão e o n da batida que deverá ser retornada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Num\+File} & \\
+\hline
+{\em p\+Num\+Stroke} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_d_card_a437d1d0ee5a0f3dbf7d76fdef586fae1}\label{class_s_d_card_a437d1d0ee5a0f3dbf7d76fdef586fae1}} 
+\index{SDCard@{SDCard}!writeInFile@{writeInFile}}
+\index{writeInFile@{writeInFile}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{writeInFile()}{writeInFile()}}
+{\footnotesize\ttfamily void SDCard\+::write\+In\+File (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{p\+Engine\+Pos }\end{DoxyParamCaption})}
+
+
+
+Escreve a posição dos motores no arquivo de armazenar posição. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Engine\+Pos} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_s_d_card_ad090fd679dfcb31d03097b7566b36485}\label{class_s_d_card_ad090fd679dfcb31d03097b7566b36485}} 
+\index{SDCard@{SDCard}!SD\_SPEED@{SD\_SPEED}}
+\index{SD\_SPEED@{SD\_SPEED}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{SD\_SPEED}{SD\_SPEED}}
+{\footnotesize\ttfamily int SDCard\+::\+SD\+\_\+\+SPEED}
+
+
+
+BPM contido no arquivo de cada música. 
+
+\mbox{\Hypertarget{class_s_d_card_ab6bec441dac1b45d9355eb13e799cd37}\label{class_s_d_card_ab6bec441dac1b45d9355eb13e799cd37}} 
+\index{SDCard@{SDCard}!SD\_SUBDIVISION@{SD\_SUBDIVISION}}
+\index{SD\_SUBDIVISION@{SD\_SUBDIVISION}!SDCard@{SDCard}}
+\doxysubsubsection{\texorpdfstring{SD\_SUBDIVISION}{SD\_SUBDIVISION}}
+{\footnotesize\ttfamily int SDCard\+::\+SD\+\_\+\+SUBDIVISION}
+
+
+
+Subdivisão ritmíca de cada música. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_s_d_card_8hpp}{SDCard.\+hpp}}\item 
+src/\mbox{\hyperlink{_s_d_card_8cpp}{SDCard.\+cpp}}\end{DoxyCompactItemize}
